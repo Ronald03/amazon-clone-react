@@ -13,12 +13,14 @@ function Home() {
         />
         <div className="home__row">
           <Product
+            id="1001"
             title="The lean startup "
             price={29.99}
             image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
             rating={4}
           />
           <Product
+            id="1002"
             title="Samsung LC429827402 49' Curve LED Gaming Monitor"
             price={199.99}
             rating={4}
@@ -27,18 +29,21 @@ function Home() {
         </div>
         <div className="home__row">
           <Product
+            id="1003"
             title="New Apple iPad Pro (12.90inch, Wi-Fi, 125GB) - Silver (4th Gen)"
             price={199.99}
             rating={3}
             image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
           />
           <Product
+            id="1004"
             title="Samsung LC429827402 49' Curve LED Gaming Monitor"
             price={199.99}
             rating={2}
             image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
           />
           <Product
+            id="1005"
             title="Samsung LC429827402 49' Curve LED Gaming Monitor"
             price={199.99}
             rating={4}
@@ -47,6 +52,7 @@ function Home() {
         </div>
         <div className="home__row">
           <Product
+            id="1006"
             title="Samsung LC4556453XEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
             price={529.99}
             image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
