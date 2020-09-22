@@ -1,5 +1,5 @@
 .header {
-  height: 50px;
+  height: 60px;
   display: flex;
   align-items: center;
   background-color: #131921;
@@ -28,11 +28,15 @@
   border: none;
   width: 100%;
 }
+.header__searchInput:focus {
+  outline: none;
+}
 
 .header__searchIcon {
   padding: 5px;
   height: 22px !important;
   background-color: orange;
+  cursor: pointer;
 }
 
 .header__nav {
@@ -46,6 +50,18 @@
   margin-left: 10px;
   margin-right: 10px;
   color: #fff;
+
+  flex-flow: column nowrap;
+  border: 1px solid #131921;
+}
+
+.header__nav > a {
+  border: 1px solid #131921;
+  padding: 10px;
+}
+
+.header__nav > a:hover {
+  border: 1px solid #fff;
 }
 
 .header__optionLineOne {

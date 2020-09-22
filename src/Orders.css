@@ -1,6 +1,46 @@
 .orders {
+  max-width: 75%;
   padding: 20px 80px;
 }
-.order > h1 {
+
+.order__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order__nav > h1 {
   margin: 30px 0;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.orderSearch__Container > form > input {
+  width: 300px;
+  height: 30px;
+  margin-right: 10px;
+  border: 0.5px solid rgb(189, 184, 184);
+  padding-left: 15px;
+  line-height: 19px;
+}
+
+.orderSearch__Container > form > input:focus {
+  outline: none;
+  border: 0.5px solid rgb(238, 129, 27);
+}
+
+.orderSearch__Container > form > button {
+  height: 35px;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 4px;
+  opacity: 0.7;
+  background: linear-gradient(to top, #2e2e36 95%, #ffffff80 100%);
+  color: white;
+}
+.orderSearch__Container > form > button:hover {
+  opacity: 0.9;
 }

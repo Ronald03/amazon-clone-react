@@ -1,5 +1,4 @@
 .order {
-  padding: 40px;
   margin: 20px 0;
   border: 1px solid lightgray;
   background-color: #fff;
@@ -12,7 +11,27 @@
   right: 20px;
 }
 
-.order__total {
-  font-weight: 500;
-  text-align: right;
+.order__details {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px 4px 0 0;
+  margin-top: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #f6f6f6;
+}
+
+.order__info {
+  display: flex;
+  flex-direction: column;
+  color: #565959;
+  line-height: 18px;
+}
+
+.order__info > span:first-child {
+  font-size: 11px;
+}
+
+.order__info > span:nth-child(2) {
+  font-size: 13px !important;
 }
