@@ -1,24 +1,17 @@
 .order {
-  margin: 20px 0;
   border: 1px solid lightgray;
   background-color: #fff;
   position: relative;
-}
-
-.order__id {
-  position: absolute;
-  top: 40px;
-  right: 20px;
 }
 
 .order__details {
   display: flex;
   justify-content: space-between;
   border-radius: 4px 4px 0 0;
-  margin-top: 0;
-  width: 100%;
+  margin-top: 20px;
   padding: 20px;
   background-color: #f6f6f6;
+  border: 1px solid lightgray;
 }
 
 .order__info {

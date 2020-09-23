@@ -1,4 +1,5 @@
 .orders {
+  margin-top: 20px;
   max-width: 75%;
   padding: 20px 80px;
 }
@@ -44,3 +45,7 @@
 .orderSearch__Container > form > button:hover {
   opacity: 0.9;
 }
+
+/* .orders__order {
+  margin-top: 20px;
+} */
