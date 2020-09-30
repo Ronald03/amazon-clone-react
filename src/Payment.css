@@ -1,8 +1,10 @@
 .payment {
   background-color: white;
+  display: flex;
 }
 
 .payment__container {
+  flex-grow: 1;
   text-align: center;
   padding: 10px;
   font-weight: 400;
@@ -43,15 +45,75 @@
   padding-bottom: 20px;
 }
 
-.payment__details > form > div > button {
+.payment__placeOrder {
+  width: 25%;
+  margin: 10px 30px 10px 10px;
+  border: 1px solid lightgray;
+  border-radius: 7px;
+}
+
+.payment__submitOrder {
+  padding: 10px;
+}
+
+.payment__submitOrder > form > Button {
+  width: 100%;
+  padding: 10px;
   background: #f0c14b;
   border-radius: 2px;
-  width: 100%;
-  height: 30px;
   border: 1px solid;
-  font-weight: bolder;
-  margin-top: 10px;
+  font-size: 13px;
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
   cursor: pointer;
+}
+
+.payment__submitOrder > form > p {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: rgb(158, 158, 158);
+}
+
+.payment__submitOrder > form > p > span {
+  cursor: pointer;
+  color: #007185;
+}
+
+hr {
+  background-color: transparent;
+  height: 1px;
+  border-width: 0;
+  border-top: 1px solid #e7e7e7;
+  line-height: 19px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.payment__SummaryHeader {
+  margin-top: 4px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.255;
+}
+
+table {
+  font-size: 12px;
+  line-height: 1.5;
+}
+table,
+th,
+td {
+  width: 100%;
+}
+
+td:last-child {
+  padding-right: 0;
+  text-align: right;
+  margin-right: 0;
+}
+
+.payment__orderTotal {
+  color: #b12704 !important;
 }

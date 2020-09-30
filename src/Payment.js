@@ -86,12 +86,21 @@ function Payment() {
         {/* Payment section - delivery addess */}
         <div className="payment__section">
           <div className="payment__title">
-            <h3>Delivery Address</h3>
+            <h3>Shipping address</h3>
           </div>
           <div className="payment__address">
             <p>{user?.email}</p>
             <p>650 Leora Lane</p>
             <p>Lewisville, TX</p>
+          </div>
+        </div>
+        <div className="payment__section">
+          <div className="payment__title">
+            <h3>Payment Method</h3>
+          </div>
+          <div className="payment__details">
+            {/* Stripe magic will go */}
+            <CardElement onChange={handleChange} />
           </div>
         </div>
         {/* payment section - Review Items */}
@@ -112,29 +121,57 @@ function Payment() {
           </div>
         </div>
         {/* Payment section - payment method */}
-        <div className="payment__section">
-          <div className="payment__title">
-            <h3>Payment Method</h3>
+      </div>
+
+      <div className="payment__placeOrder">
+        <div className="payment__submitOrder">
+          <form onSubmit={handleSubmit}>
+            {/*  */}
+            <button disabled={processing || disabled || succeeded}>
+              <span>{processing ? <p>Processing</p> : "Place your order"}</span>
+            </button>
+            {error && <div>{error}</div>}
+            <p>
+              By placing you order you agree to this Clone's FAKE
+              <span> Privacy notice </span>
+              and <span>condition of use</span>.
+            </p>
+          </form>
+
+          <hr />
+
+          <div className="payment__summary">
+            <div>
+              <h3 className="payment__SummaryHeader">Order Summary</h3>
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <span>Items:</span>
+                  </td>
+                  <td>$50.39</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>Shipping and handling:</span>
+                  </td>
+                  <td>$4.99</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div className="payment__details">
-            {/* Stripe magic will go */}
-            <form onSubmit={handleSubmit}>
-              <CardElement onChange={handleChange} />
-              <div className="payment__priceContainer">
-                <CurrencyFormat
-                  renderText={(value) => <h3>Order Total: {value}</h3>}
-                  decimalScale={2}
-                  value={getBasketTotal(basket)}
-                  displayType={"text"}
-                  thousandSeparator={true}
-                  prefix={"$"}
-                />
-                <button disabled={processing || disabled || succeeded}>
-                  <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
-                </button>
-              </div>
-              {error && <div>{error}</div>}
-            </form>
+          <div className="payment__priceContainer">
+            <CurrencyFormat
+              renderText={(value) => (
+                <h3 className="payment__orderTotal">Order total: {value}</h3>
+              )}
+              decimalScale={2}
+              value={getBasketTotal(basket)}
+              displayType={"text"}
+              thousandSeparator={true}
+              prefix={"$"}
+            />
           </div>
         </div>
       </div>
