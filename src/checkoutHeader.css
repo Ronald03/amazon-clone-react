@@ -1,0 +1,15 @@
+.bannerBorder {
+  padding: 5px;
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/31/common/sprites/tspc-header-bkg.png");
+}
+
+.containElements {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  zoom: 1;
+  width: 100%;
+}

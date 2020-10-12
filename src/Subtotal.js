@@ -29,7 +29,7 @@ function Subtotal() {
         thousandSeparator={true}
         prefix={"$"}
       />
-      <button onClick={(e) => history.push("/payment")}>
+      <button disabled={basket.length<1 ? true : false} onClick={(e) => history.push("/payment")}>
         Proceed to Checkout
       </button>
     </div>

@@ -1,6 +1,6 @@
 .payment {
   background-color: white;
-  display: flex;
+  display: flex !important;
 }
 
 .payment__container {
@@ -8,8 +8,6 @@
   text-align: center;
   padding: 10px;
   font-weight: 400;
-  background-color: rgb(234, 237, 237);
-  border-bottom: 1px solid lightgray;
 }
 
 .payment__container > h1 a {
