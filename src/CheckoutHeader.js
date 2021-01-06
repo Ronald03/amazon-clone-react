@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import React from "react";
+import { useStateValue } from "./StateProvider";
 import { red } from "@material-ui/core/colors";
 import HttpsIcon from "@material-ui/icons/Https";
-import { useStateValue } from "./StateProvider";
-import React from "react";
+
 import "./checkoutHeader.css";
 import { Container } from "@material-ui/core";
 
